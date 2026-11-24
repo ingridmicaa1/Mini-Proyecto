@@ -1,10 +1,7 @@
 # Mini-Proyecto
 # Mini Proyecto: Higher Order Functions en Criptografía
 
-**Asignatura:** Programación Funcional y Reactiva
-**Lenguaje:** Scala 3
-**Autora:** Ingrid [Apellido]
-**Docente:** [Nombre del docente]
+
 
 ---
 
