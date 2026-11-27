@@ -169,14 +169,16 @@ Al ejecutar `Criptografia`, se obtienen los siguientes resultados:
 [Prueba Carácter No Soportado] Capturado -> Carácter no soportado para César: 'c' (solo letras A-Z)
 
 ## Preguntas Para Reflexionar
-1. ** ¿Por que el método XOR es su propia función inversa utilizando el mismo operador ^, mientras que el Cesar requiere invertir el signo de la clave?**
+1. **¿Por qué el método XOR es su propia función inversa utilizando el mismo operador ^, mientras que el Cesar requiere invertir el signo de la clave?**
 
 Porque el operador XOR (`^`) trabaja comparando bit por bit (0 y 1): si un bit cambia al aplicar la clave una vez, al volver a aplicar exactamente la misma clave se vuelve a invertir y regresa a su valor original (como encender y apagar un mismo interruptor). En cambio, el Cifrado César suma posiciones hacia adelante en el alfabeto; para volver a la letra original hay que restar esa misma cantidad de posiciones usando `-k`.
 
 2. **¿Que ventajas ofrece el uso de ´ map sobre un bucle for tradicional en este contexto?**
 
 **Evita variables mutables (`var`):** No hace falta crear una variable acumuladora vacía ni modificar estados paso a paso; `map` devuelve directamente un nuevo `String` transformado.
+
 **Mayor claridad:** Permite escribir en una sola línea qué transformación se aplica a cada carácter sin preocuparse por índices o contadores.
+
 **Integración funcional:** Se combina de forma limpia con `Try`, `Option` y funciones anónimas sin efectos colaterales.
 
 4. **¿Cómo ayuda el tipado estático a prevenir errores al pasar funciones como argumentos?**
