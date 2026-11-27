@@ -174,7 +174,7 @@ object Criptografia {
 
 ## Resultados de Ejecución
 
-Al ejecutar `Criptografia.main`, se obtienen los siguientes resultados:
+Al ejecutar `Criptografia`, se obtienen los siguientes resultados:
 
 <img width="1845" height="1078" alt="image" src="https://github.com/user-attachments/assets/f199312c-395b-4256-a60f-aac7dbb47b16" />
 
