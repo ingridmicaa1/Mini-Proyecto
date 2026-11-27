@@ -92,7 +92,7 @@ object Criptografia {
     val claveXOR = 5
 
 
-    val cifrado2 = procesarMensaje(msgXOR, claveXOR, (c, k) => (c.toInt ^ k).toChar)
+    val cifrado2 = procesarMensaje(msgXOR, claveXOR, cifradoXOR)
     cifrado2 match {
       case Success(textoCifrado) =>
         println(s"Original: $msgXOR | Clave: $claveXOR -> Cifrado:$textoCifrado")
